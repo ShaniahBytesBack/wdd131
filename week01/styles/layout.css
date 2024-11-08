@@ -1,5 +1,14 @@
+/* Resetting some default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -10,6 +19,7 @@ header {
     background-color: #4A90E2;
     color: #FFFFFF;
     text-align: center;
+    padding: 20px;
 }
 
 nav {
@@ -22,24 +32,33 @@ nav {
 nav a {
     color: #ECF0F1;
     text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #34495E;
 }
 
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 10px;
+    padding: 20px;
 }
 
 .main-content {
     background-color: #BDC3C7;
     padding: 20px;
     color: #333333;
+    border-radius: 5px;
 }
 
 aside {
     background-color: #FFFFFF; 
     padding: 20px;
-    color: #333333; 
+    color: #333333;
+    border-radius: 5px;
 }
 
 footer {
