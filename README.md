@@ -21,7 +21,6 @@ Currently, the site includes:
 - **HTML**: For structuring the content.
 - **CSS**: For styling the page with Flexbox, hover effects, and a clean design.
 - **JavaScript**: For dynamically displaying the last modified date.
-- **Google Fonts**: Using the fonts `Sour Gummy` and `Faculty Glyphic` to give the page a custom typography.
 
 ## File Structure
 
