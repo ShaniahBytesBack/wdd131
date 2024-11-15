@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+    .header-container {
+        justify-content: flex-start;
+        gap: 2em;
+    }
+
+    #hamburger {
+        display: none; 
+    }
+
+    #nav-menu {
+        display: flex; 
+        flex-direction: row;
+        gap: 1em;
+        position: static;
+        background-color: transparent;
+    }
+
+    .album-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

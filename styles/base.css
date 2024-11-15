@@ -152,7 +152,6 @@ figure img {
     border-radius: 4px;   
 }
 
-
 footer {
     background-color: #004d80;
     color: #ffffff;
@@ -166,7 +165,6 @@ footer {
     font-style: italic;
 }
 
-/* Responsive Styles */
 @media (max-width: 1024px) {
     main {
         flex-direction: column;
