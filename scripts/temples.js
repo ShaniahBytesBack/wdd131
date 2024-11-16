@@ -9,4 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
     hamburger.addEventListener("click", () => {
         navMenu.style.display = navMenu.style.display === "flex" ? "none" : "flex";
     });
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth >= 768) {
+            navMenu.style.display = "flex";
+        } else {
+            navMenu.style.display = "none";
+        }
+    });
 });

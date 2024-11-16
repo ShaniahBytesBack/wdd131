@@ -8,12 +8,18 @@
         display: none; 
     }
 
-    #nav-menu {
-        display: flex; 
-        flex-direction: row;
-        gap: 1em;
-        position: static;
-        background-color: transparent;
+    @media (min-width: 768px) {
+        #nav-menu {
+            display: flex; 
+            flex-direction: row;
+            gap: 1em; 
+            position: static; 
+            background-color: transparent;
+            box-shadow: none;
+            width: auto;
+            padding: 0;
+            margin-left: auto;
+        }
     }
 
     .album-grid {
