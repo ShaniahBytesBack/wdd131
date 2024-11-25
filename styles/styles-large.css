@@ -1,32 +1,31 @@
-/* Media Queries */
 @media (max-width: 1200px) {
     .info-box {
-      width: 25%;
+        width: 25%;
     }
   
     .info-box h2 {
-      margin-left: -26px;
-      width: 90%;
+        margin-left: -26px;
+        width: 90%;
     }
   }
   
   @media (max-width: 992px) {
     .info-box {
-      width: 30%;
+        width: 30%;
     }
   
     .weather {
-      top: 25%;
+        top: 25%;
     }
   }
 
   @media (max-width: 768px) {
     .hero picture img {
-      margin-top: -15px;
+        margin-top: -15px;
     }
   
     .info-box {
-      width: 80%;
+        width: 80%;
     }
 
     .info-box h2{
@@ -40,12 +39,26 @@
       }
   
     .data, .weather {
-      position: relative;
-      top: auto;
-      left: auto;
-      right: auto;
-      align-items: center;
-      margin: 2rem 2rem ;
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        align-items: center;
+        margin: 2rem 2rem ;
     }
+    
+      
+    .weather h2::after {
+        position: static;
+        display: block;
+        margin: 3rem auto 0;
+        width: 50px;
+        height: 50px;
+        margin-bottom: -20px;
+        background-image: url('/images/SunnyDayV3.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-align: center; 
+      }
   }
   
