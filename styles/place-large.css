@@ -9,7 +9,7 @@
     }
   }
   
-  @media (max-width: 992px) {
+@media (max-width: 992px) {
     .info-box {
         width: 30%;
     }
@@ -17,9 +17,9 @@
     .weather {
         top: 25%;
     }
-  }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .hero picture img {
         margin-top: -15px;
     }
@@ -60,5 +60,4 @@
         background-repeat: no-repeat;
         text-align: center; 
       }
-  }
-  
+}
