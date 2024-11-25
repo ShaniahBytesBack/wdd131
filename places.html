@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesotho</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script defer src="scripts/script.js"></script>
+</head>
+<body>
+    <header>
+      <h1>Welcome to Lesotho</h1>
+    </header>
+  
+    <main>
+      <section class="hero">
+        <picture>
+          <source srcset="images/lesotho-large.webp" media="(min-width: 768px)">
+          <img src="images/lesotho-small.webp" alt="Lesotho Mountain View">
+        </picture>
+        <div class="info-box data">
+          <h2>Data</h2>
+          <ul>
+            <li><strong>Area:</strong> 30,355 sq km</li>
+            <li><strong>Population:</strong> 2,330,000</li>
+            <li><strong>Capital:</strong> Maseru</li>
+            <li><strong>Languages:</strong> Sesotho, English</li>
+            <li><strong>Currency:</strong> Lesotho Loti</li>
+            <li><strong>Time Zone:</strong> UTC+2</li>
+            <li><strong>Calling Code:</strong> +266</li>
+            <li><strong>Internet TLD:</strong> .ls</li>
+          </ul>
+        </div>
+        <div class="info-box weather">
+            <h2>Weather</h2>
+            <div class="weather-icon">
+              <img src="images/SunnyDayV3.svg" alt="Sunny day" />
+            </div>
+            <ul>
+              <li><strong>Temperature:</strong> <span>85°F</span></li>
+              <li><strong>Conditions:</strong> Sunny</li>
+              <li><strong>Wind:</strong> 12 km/h</li>
+              <li><strong>Wind Chill:</strong> <span id="windChill">N/A</span></li>
+            </ul>
+        </div>                    
+      </section>
+    </main>
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Shaniah M. Nyabawa 🍑 Lesotho 🍑</p>
+      <p><span id="lastModified" class="highlight"></span></p>
+    </footer>
+  </body>
+</html>
