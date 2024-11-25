@@ -1,0 +1,51 @@
+/* Media Queries */
+@media (max-width: 1200px) {
+    .info-box {
+      width: 25%;
+    }
+  
+    .info-box h2 {
+      margin-left: -26px;
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .info-box {
+      width: 30%;
+    }
+  
+    .weather {
+      top: 25%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero picture img {
+      margin-top: -15px;
+    }
+  
+    .info-box {
+      width: 80%;
+    }
+
+    .info-box h2{
+        background: none;
+        font-family: "Faculty Glyphic", sans-serif;
+        box-shadow: none;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        color: black;
+      }
+  
+    .data, .weather {
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      align-items: center;
+      margin: 2rem 2rem ;
+    }
+  }
+  

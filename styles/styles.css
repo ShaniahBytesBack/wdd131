@@ -19,7 +19,7 @@ header {
 
 header h1 {
   margin: 0;
-  font-family: "Sour Gummy", serif;
+  font-family: "Faculty Glyphic", sans-serif;
 }
 
 .hero {
@@ -36,16 +36,19 @@ header h1 {
 
 .info-box {
   position: absolute;
-  background: rgba(255, 251, 251, 0.493);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   padding: 1rem;
   box-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
   width: 20%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
 }
-
 
 .info-box h2{
   background-color: #007a33;
+  font-family: "Faculty Glyphic", sans-serif;
   margin: 0 0 1rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   margin-left: -26px;
@@ -62,18 +65,45 @@ header h1 {
 
 .weather {
   top: 40%;
-  right: 5%;
+  right: 8%;
 }
 
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
 }
 
 li {
+  display: flex; 
+  align-items: center; 
   margin-bottom: 0.5rem;
 }
+
+li strong {
+  min-width: 120px; 
+  text-align: right; 
+  margin-right: 10px; 
+}
+
+li span {
+  text-align: right;
+}
+
+.weather .weather-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.weather .weather-icon img {
+  width: 70px;
+  height: auto;
+}
+
 
 footer {
   background-color: #002776;
@@ -83,26 +113,3 @@ footer {
   font-size: 0.8em;
 }
 
-@media (max-width: 768px) {
-  body{
-    background-color: #fff;
-  }
-
-  .hero picture img {
-    margin-top: -15px;
-  }
-
-  .info-box {
-    width: 80%;
-    left: 10%;
-    right: 10%;
-  }
-
-  .data, .weather {
-    position: relative;
-    top: auto;
-    left: auto;
-    right: auto;
-    margin: 2rem 2rem;
-  }
-}
