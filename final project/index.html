@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Diaries</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> <!-- Remix Icons -->
+</head>
+<body class="dark-mode">
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <!-- Logo (SVG animated logo) -->
+            <div class="logo">
+                <object class="svg-logo" type="image/svg+xml" data="path/to/your/logo.svg"></object>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Progress Tracker</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger Icon for Mobile View -->
+            <div id="hamburger-icon" class="hamburger-icon">
+                <i class="ri-menu-line"></i> <!-- Remix Icon hamburger icon -->
+            </div>
+        </nav>
+
+        <!-- Dark/Light Theme Toggle -->
+        <div class="theme-toggle">
+            <span id="theme-icon">🌙</span>
+        </div>
+
+        <!-- User Profile Dropdown (Only visible if logged in) -->
+        <div class="user-profile">
+            <div id="user-menu" class="dropdown">
+                <!-- Logged out view -->
+                <div id="login-links" class="login-links">
+                    <a href="#">Sign In</a> / <a href="#">Sign Up</a>
+                </div>
+
+                <!-- Logged in view (hidden by default) -->
+                <div id="user-options" class="user-options" style="display: none;">
+                    <a href="#">Profile</a>
+                    <a href="#">Progress</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

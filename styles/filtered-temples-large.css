@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+    #hamburger {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #4c2a85;
+      position: absolute;
+      top: 90px;
+      right: 0;
+      border-radius: 5px;
+      overflow: hidden;
+      width: 200px;
+    }
+  
+    nav ul li {
+      text-align: center;
+      margin: 0;
+    }
+  
+    nav ul li a {
+      display: block;
+      padding: 10px;
+    }
+  
+    nav ul.active {
+      display: flex;
+    }
+}

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Lobster&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Sour Gummy", serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+  
+header {
+    background-color: #4B0082;
+    color: #fff;
+    padding: 1em;
+}
+  
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.logo {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: "Lobster", sans-serif;
+    color: #fff;
+    margin-left: 30px;
+}
+  
+#hamburger {
+    display: none; 
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+  
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li {
+    width: 100%; 
+    text-align: left;
+}
+  
+nav ul li a {
+    display: block;
+    padding: 0.5em 3em;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+  
+nav ul li a:hover {
+    background-color: #6c3483; 
+    border-radius: 4px;
+}
+
+main {
+    padding: 20px;
+}
+  
+main h1 {
+    font-size: 2em;
+    color: #4c2a85;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+#temple-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+    padding: 0 20px;
+}
+  
+#temple-container div {
+    background-color: rgb(222, 219, 219);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #7a7a7a;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+#temple-container div:hover {
+    transform: translateY(-5px);
+}
+
+#temple-container h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #000;
+}
+
+#temple-container p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: black; 
+    font-weight: normal; 
+}
+
+#temple-container img {
+    width: 90%;
+    height: 45vh;
+    margin: 15px 0;
+    box-shadow: 1px 1px 8px 5px rgba(0, 0, 0, 0.5);
+}
+
+#temple-container p span {
+    font-weight: bold;
+    color: #6c3483; 
+}
+  
+footer {
+    background-color: #4c2a85;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    position: relative;
+}
+  
+footer p {
+    margin: 5px 0;
+}
+  
+footer .highlight {
+    color: #ffcc00;
+}

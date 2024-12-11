@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtered Temples</title>
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">  
+            <h1 class="logo">Temple Album</h1>
+            <button id="hamburger" aria-label="Toggle navigation">&#9776;</button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#" id="nav-home">Home</a></li>
+                    <li><a href="#" id="nav-old">Old</a></li>
+                    <li><a href="#" id="nav-new">New</a></li>
+                    <li><a href="#" id="nav-large">Large</a></li>
+                    <li><a href="#" id="nav-small">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1>Filtered Temples</h1>
+            <div id="temple-container"></div>
+        </section>  
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Shaniah M. Nyabawa 🍑 Zimbabwe 🍑</p>
+        <p><span id="lastModified" class="highlight"></span></p>
+    </footer>
+  <script src="scripts/filtered-temples.js"></script>
+</body>
+</html>
