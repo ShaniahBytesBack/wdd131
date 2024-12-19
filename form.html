@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/form-large.css">
     <script defer src="scripts/form.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -27,53 +31,52 @@
                 <legend>Overall Rating</legend>
                 <div>
                     <div class="rating-container">
-                      <label class="star-label">
-                        <input type="radio" name="rating" value="1" />
-                        <div class="stars">
-                          <i class="ri-star-fill"></i>
-                        </div>
-                        
-                      </label>
-                      <label class="star-label">
-                        <input type="radio" name="rating" value="2" />
-                        <div class="stars">
-                          <i class="ri-star-fill"></i>
-                          <i class="ri-star-fill"></i>
-                        </div>
-                      </label>
-                      <label class="star-label">
-                         <input type="radio" name="rating" value="3" />
-                        <div class="stars">
-                          <i class="ri-star-fill"></i>
-                          <i class="ri-star-fill"></i>
-                          <i class="ri-star-fill"></i>
-                        </div>
-                      </label>
-                      <label class="star-label">
-                        <input type="radio" name="rating" value="4" />
-                        <div class="stars">
-                          <i class="ri-star-fill"></i>
-                          <i class="ri-star-fill"></i>
-                          <i class="ri-star-fill"></i>
-                          <i class="ri-star-fill"></i>
-                        </div>
-                      </label>
-                      <label class="star-label">
-                        <input type="radio" name="rating" value="5" />
-                        <div class="stars">
-                          <i class="ri-star-fill"></i>
-                          <i class="ri-star-fill"></i>
-                          <i class="ri-star-fill"></i>
-                          <i class="ri-star-fill"></i>
-                          <i class="ri-star-fill"></i>
-                        </div>
-                      </label>
+                        <label class="star-label">
+                            <input type="radio" name="rating" value="1">
+                            <span class="stars">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                        </label>
+                        <label class="star-label">
+                            <input type="radio" name="rating" value="2">
+                            <span class="stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </span>
+                        </label>
+                        <label class="star-label">
+                            <input type="radio" name="rating" value="3">
+                            <span class="stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </span>
+                        </label>
+                        <label class="star-label">
+                            <input type="radio" name="rating" value="4">
+                            <span class="stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </span>
+                        </label>
+                        <label class="star-label">
+                            <input type="radio" name="rating" value="5">
+                            <span class="stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </span>
+                        </label>
                     </div>
-                  </div>                                 
+                </div>                                 
             </fieldset>
 
             <label for="installation-date">Date of Installation</label>
-            <input type="date" id="installation-date" name="installation-date" required placeholder="mm/dd/yyyy">
+            <input type="date" id="installation-date" name="installation-date" required>
 
             <fieldset>
                 <legend>Which features did you find useful in the product? <i>(Check all that apply)</i></legend>
