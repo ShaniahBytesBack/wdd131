@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: black;
+  background-color: #f9f9f9;
+}
+
+span {
+  color: #4B006E;
+}
+
+header {
+  background-color: #4B006E; /* Dark Purple */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+form {
+  background-color: #E0E0E0; /* Light Gray */
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+label, legend {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+    height: 35vh;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+input[type="submit"] {
+  background-color: #FFFFFF;
+  color: black;
+  border: 2px solid #4B006E;
+  font-size: 1rem;
+  padding: 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #4B006E;
+  color: white;
+}
+
+.rating-label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+  color: #000; /* Adjust to match design */
+}
+
+.rating-container {
+  display: flex;
+  justify-content: space-around; /* Ensure even spacing for all options */
+  gap: 15px; /* Adjust spacing between options */
+}
+
+.star-label {
+  display: flex;
+  flex-direction: column; /* Stack stars above radio buttons */
+  align-items: center; /* Center-align stars and radio buttons */
+  cursor: pointer;
+}
+
+.stars {
+  display: flex; /* Ensures stars stay in a row */
+  gap: 5px; /* Spacing between stars */
+}
+
+.stars i {
+  font-size: 18px; /* Size of stars */
+  color: #443a01; 
+  transition: .3s ease;
+}
+
+.star-label input[type="radio"] {
+  margin-top: 5px; 
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.star-label input[type="radio"]:checked + .stars i {
+  color: black; /* Change star color to black when selected */
+}
+
+.star-label:hover .stars i {
+  color: #ffcc00; /* Change stars to brighter gold on hover for interactivity */
+}
+
+footer {
+  background-color: #4B006E; 
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  form {
+    padding: 1rem;
+  }
+
+  input, select, textarea {
+    font-size: 0.9rem;
+  }
+
+  input[type="submit"] {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}
